@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Acme", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0,05,95%);
+    background-image: url(01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#calculator{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow:0 0 500px hsl(272, 87%, 70%); 
+    border: solid px  hsl(327, 60%, 40%);
+}
+#display{
+    width: 150%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(162, 215, 255, 0.552);
+    color: rgb(237, 234, 229);
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    margin-left: 35px;
+    background: transparent;
+    color:rgb(241, 241, 241);
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(227, 44%, 27%);
+}
+button:active{
+    background-color: hsl(272, 41%, 35%);
+}
+.operator-btn{
+    background-color: hsla(262, 67%, 71%, 0.825);
+}
+.operator-btn:hover{
+    background-color:hsl(263, 53%, 43%);
+}
+.operator-btn:active{
+    background-color: hsl(233, 55%, 51%);
+}
